@@ -5,6 +5,7 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 export default new Router({
+  baseUrl: "",
   routes: [
     {
       path: "/",
@@ -27,7 +28,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Schedule.vue")
+        import(/* webpackChunkName: "schedule" */ "./views/Schedule.vue")
     },
     {
       path: "/mailing",
@@ -36,7 +37,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Mailing.vue")
+        import(/* webpackChunkName: "mailing" */ "./views/Mailing.vue")
     },
     {
       path: "/returns",
@@ -45,7 +46,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Returns.vue")
+        import(/* webpackChunkName: "returns" */ "./views/Returns.vue")
     }
   ]
 });

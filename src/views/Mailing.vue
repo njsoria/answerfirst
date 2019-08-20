@@ -1,6 +1,10 @@
 <template>
-  <div class="about">
-    <h1>Add customer to mailing list (info collection)</h1>
+  <div class="container">
+    <div class="alert alert-warning" role="alert">
+      <h3 class="">Mailing List</h3>
+      <hr>
+      <p>Please Fill Out the Information Below. This will add the customer to our mailing list for updates, specials and more.</p>
+    </div>
     <!-- Begin Mailchimp Signup Form -->
     <div class="container">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">

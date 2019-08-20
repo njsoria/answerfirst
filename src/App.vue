@@ -2,11 +2,10 @@
   <div id="app">
     <div id="nav">
       <img class="logo" alt="CANN & Co. logo" src="./assets/logo.png" />
-      <router-link to="/orders"><button class="btn btn-success btn-lg">Orders</button></router-link> |
-      <router-link to="/schedule"><button class="btn btn-primary btn-lg">Schedule</button></router-link> |
-      <router-link to="/mailing"><button class="btn btn-warning btn-lg">Mailing List</button></router-link> |
-      <router-link to="/returns"><button class="btn btn-danger btn-lg">Returns/Refunds</button></router-link>
-      <hr>
+      <router-link to="/orders"><button class="btn btn-success ">Orders</button></router-link> |
+      <router-link to="/schedule"><button class="btn btn-primary ">Schedule</button></router-link> |
+      <router-link to="/mailing"><button class="btn btn-warning ">Mailing List</button></router-link> |
+      <router-link to="/returns"><button class="btn btn-danger ">Returns/Refunds</button></router-link>
     </div>
     <router-view />
   </div>
@@ -27,7 +26,8 @@
   color: #2c3e50;
 }
 #nav {
-  padding-top: 30px;
+  padding: 5px;
+  border-bottom: 5px solid #88b14b;
 }
 
 #nav a {
